@@ -1,7 +1,25 @@
+:root {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1;
+}
+
+.display-3 {
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.display-2 {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.lead {
+  font-size: 3rem;
 }
 
 textarea {
@@ -43,6 +61,8 @@ textarea {
   font-weight: bold;
   border-top: 1px dashed lightgray;
   padding-top: 10px;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .past {
