@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 16px;
   line-height: 1;
 }
@@ -15,14 +15,15 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: #999999;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 6px solid black;
 }
 
 .description {
   white-space: pre-wrap;
+  border: 2px solid darkgrey;
 }
 
 .time-block {
@@ -39,6 +40,7 @@ textarea {
 .hour {
   background-color: #ffffff;
   color: #000000;
+  font-weight: bold;
   border-top: 1px dashed #000000;
 }
 
@@ -58,10 +60,10 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 1px solid lightcyan;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: lightskyblue;
   color: white;
 }
 
