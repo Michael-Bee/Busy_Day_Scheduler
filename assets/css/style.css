@@ -11,6 +11,8 @@ body {
 .display-3 {
   font-size: 6rem;
   font-weight: 600;
+  color: rgb(230, 54, 0);
+  text-shadow: 3px 3px 2px #666;
 }
 
 .display-2 {
@@ -28,7 +30,7 @@ textarea {
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .jumbotron {
@@ -87,7 +89,7 @@ textarea {
   background-color: #4682B4;
   font-size: 2rem;
   color: lightblue;
-  transition: all 0.3s ease-in-out
+  transition: all 0.5s ease-in-out
 }
 
 .saveBtn:hover {
