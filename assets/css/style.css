@@ -18,10 +18,12 @@ body {
 .display-2 {
   font-size: 2rem;
   font-style: italic;
+  color: #444;
 }
 
 .lead {
   font-size: 3rem;
+  margin-top: 20px;
 }
 
 textarea {

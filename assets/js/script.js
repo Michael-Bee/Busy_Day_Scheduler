@@ -1,6 +1,8 @@
-var currentDate = document.getElementById.currentDay
+var currentDate = document.getElementById("currentDay");
+var todaysDate = moment().format("MMMM Do, YYYY");
 
-currentDate = "Today's date"
+console.log(todaysDate);
+currentDate.textContent = todaysDate;
 
 //make function that displays time in jumbotron id currentDAY
 
