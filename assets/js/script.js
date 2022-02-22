@@ -1,58 +1,57 @@
 //function that displays date in jumbotron
 var currentDate = document.getElementById("currentDay");
 var todaysDate = moment().format("MMMM Do, YYYY");
-console.log(todaysDate);
 currentDate.textContent = todaysDate;
 
 
 //function for save button to console log time and description, then save them in local storage in an array
     
 
-window.localStorage.setITem(id,description)
-    var Hour = {
-        id:"09",
-        description: "saved text",
-        }
+// window.localStorage.setITem(id,description)
+//     var Hour = {
+//         id:"09",
+//         description: "saved text",
+//         }
 
-    window.localStorage.setItem('hour', JSON.stringify(Hour));
+//     window.localStorage.setItem('hour', JSON.stringify(Hour));
 
 //function that constantly displays what's saved in local storage in each description box
+//could possibly do this with for loop to avoid wet code
     
-    08.description = textContent.getLocalStorage.idHour
-    09.description = textContent.getLocalStorage.idHour
-    10.description = textContent.getLocalStorage.idHour
-    11.description = textContent.getLocalStorage.idHour
-    12.description = textContent.getLocalStorage.idHour
-    13.description = textContent.getLocalStorage.idHour
-    14.description = textContent.getLocalStorage.idHour
-    15.description = textContent.getLocalStorage.idHour
-    16.description = textContent.getLocalStorage.idHour
-    17.description = textContent.getLocalStorage.idHour
+    // $("#08 .description").val(LocalStorage.getItem(Hour, id));
+    // $("#09 .description").val(LocalStorage.getItem(Hour, id));
+    // $("#10 .description").val(LocalStorage.getItem(Hour, id));
+    // $("#11 .description").val(LocalStorage.getItem(Hour, id));
+    // $("#12 .description").val(LocalStorage.getItem(Hour, id));
+    // $("#13 .description").val(LocalStorage.getItem(Hour, id));
+    // $("#14 .description").val(LocalStorage.getItem(Hour, id));
+    // $("#15 .description").val(LocalStorage.getItem(Hour, id));
+    // $("#16 .description").val(LocalStorage.getItem(Hour, id));
+    // $("#17 .description").val(LocalStorage.getItem(Hour, id));
 
 
+//function that sets background color in timeBlock
+// function rowColor() {
+//     var hourNow = moment().hour();
+//     console.log(hourNow);
 
-
-    //make function that sets background color in timeBlock
-
-    var hourNow = moment().hour();
-    console.log(hourNow);
-
-
-    // (array of timeblocks).each(function){
-    //     var timeBlock = pull hour id from array
-        //  console.log(timeBlock, hourNow)
+//     (Hour).each(function()) {
+//         var timeBlock = Hour.id
+//         console.log(timeBlock, hourNow)
         
-        // if timeBlock < hourNow {
-        //    $(this).addClass("past");
-        //    $(this).removeClass("present");
-        //    $(this).removeClass("future");
-        // } else if timeBlock === hourNow {
-        //    $(this).removeClass("past");
-        //    $(this).addClass("present");
-        //    $(this).removeClass("future");
-        // } else {
-        //    $(this).removeClass("past");
-        //    $(this).removeClass("present");
-        //    $(this).addClass("future");
-        // }
-    //}
+//         if timeBlock < hourNow {
+//             $(this).addClass("past");
+//             $(this).removeClass("present");
+//             $(this).removeClass("future");
+//         } else if timeBlock === hourNow {
+//             $(this).removeClass("past");
+//             $(this).addClass("present");
+//             $(this).removeClass("future");
+//         } else {
+//             $(this).removeClass("past");
+//             $(this).removeClass("present");
+//             $(this).addClass("future");
+//         }
+//     }
+// }
+// rowColor();
