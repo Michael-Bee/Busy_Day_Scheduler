@@ -4,7 +4,7 @@ var todaysDate = moment().format("MMMM Do, YYYY");
 currentDate.textContent = todaysDate;
 
 
-
+/*
 //function for save button to console log time and description, then save them in local storage in an array
 
 // window.localStorage.setItem(id,description)
@@ -41,22 +41,22 @@ function rowColor() {
     var hourNow = moment().hour();
     console.log(hourNow);
 
-    var timeBlock = this.id
-    console.log(timeBlock)
+    var timeBlock = /*row.id*/
+//     console.log(timeBlock)
         
-    if (timeBlock < hourNow) {
-        $this.addClass("past");
-        $this.removeClass("present");
-        $this.removeClass("future");
-    } else if (timeBlock === hourNow) {
-        $this.removeClass("past");
-        $this.addClass("present");
-        $this.removeClass("future");
-    } else {
-        $this.removeClass("past");
-        $this.removeClass("present");
-        $this.addClass("future");
-    }
-}
+//     if (timeBlock < hourNow) {
+//         /*row textarea*/.addClass("past");
+//         /*row textarea*/.removeClass("present");
+//         /*row textarea*/.removeClass("future");
+//     } else if (timeBlock === hourNow) {
+//         /*row textarea*/.removeClass("past");
+//         /*row textarea*/.addClass("present");
+//         /*row textarea*/.removeClass("future");
+//     } else {
+//         /*row textarea*/.removeClass("past");
+//         /*row textarea*/.removeClass("present");
+//         /*row textarea*/.addClass("future");
+//     }
+// }
 
-rowColor();
+// rowColor();
