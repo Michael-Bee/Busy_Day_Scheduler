@@ -1,96 +1,40 @@
-# 05 Third-Party APIs: Work Day Scheduler
+<h1>"Busy Day Scheduler"</h1>
 
-## Your Task
+<hr>
+<h2>Project Description:</h2>
+A simple calendar application that allows a user to save events for each hour of the day. The calendar displays the current date, saves tasks to persistent local memory, and color codes hour time blocks by past (gray), present (yellow), and future (green). 
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+<hr>
+<h2>Screenshot:</h2>
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+![Scheduler Screenshot](/assets/Scheduler_Screenshot.png)
 
-## User Story
+<h2>How to Install and Run:</h2>
+Clone from Michael-Bee's repository at https://github.com/Michael-Bee/Busy_Day_Scheduler
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
-
-## Acceptance Criteria
-
-```md
-GIVEN I am using a daily planner to create a schedule
-
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-
-WHEN I click into a timeblock
-THEN I can enter an event
-
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-
-WHEN I refresh the page
-THEN the saved events persist
-```
-
-The following animation demonstrates the application functionality:
-
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+Visit page at https://michael-bee.github.io/Busy_Day_Scheduler
 
 
-## Grading Requirements
+<hr>
+<h2>Credits:</h2>
+Made by Michael Bee, 2022
 
-This homework is graded based on the following criteria: 
 
-### Technical Acceptance Criteria: 40%
+<h2>Resources:</h2>
 
-* Satisfies all of the above acceptance criteria plus the following:
+https://www.w3schools.com/
 
-  * Uses a date utility library to work with date and time
+https://developer.mozilla.org/en-US/
 
-### Deployment: 32%
+https://api.jquery.com/
 
-* Application deployed at live URL
 
-* Application loads with no errors
+<hr>
+<h2>License:</h2>
+MIT License Copyright (c) [2022] [Michael Bee]
 
-* Application GitHub URL submitted
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-* GitHub repo contains application code
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
-# Busy_Day_Scheduler
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -4,7 +4,7 @@ var todaysDate = moment().format("MMMM Do, YYYY");
 currentDate.textContent = todaysDate;
 
 
-//function for save button to console log time and description, then save them in local storage in an array
+//function for save button to save time and description in local storage
 $(".saveBtn").on("click", function() {
         var timeBlock = $(this).parent().attr("id");
         var activity = $(this).siblings(".description").val();
@@ -13,7 +13,7 @@ $(".saveBtn").on("click", function() {
 });
 
 
-//function that constantly displays what's saved in local storage in each description box 
+//function that constantly displays what's saved in local storage in each corresponding textarea 
 function loadMem() {
     for (var i = 8; i < 18; i++) {
         var hourRow = $("#" + i);
@@ -23,13 +23,12 @@ function loadMem() {
 loadMem();
 
 
-// function that sets background color in timeBlock (works)
+// function that sets background color in timeblocks
 function rowColor() {
     var hourNow = moment().hour();
 
     for (var i = 8; i < 18; i++) {
         var hourRow = $("#" + i);
-        console.log(hourRow);
 
         if (i < hourNow) {
             hourRow.children(".description").addClass("past");
