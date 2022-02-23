@@ -4,59 +4,46 @@ var todaysDate = moment().format("MMMM Do, YYYY");
 currentDate.textContent = todaysDate;
 
 
-/*
 //function for save button to console log time and description, then save them in local storage in an array
+$(".saveBtn").on("click", function() {
+        var timeBlock = $(this).parent().attr("id");
+        var activity = $(this).siblings(".description").val();
 
-// window.localStorage.setItem(id,description)
-//     var Hour = {
-//         id:"09",
-//         description: "saved text",
-//         }
-
-// window.localStorage.setItem('hour', JSON.stringify(Hour));
+    window.localStorage.setItem(timeBlock, activity);
+});
 
 
-
-//function that constantly displays what's saved in local storage in each description box
-//could possibly do this with for loop to avoid wet code
-    
-    // $("#08 .description").val(LocalStorage.getItem(Hour, id, description));
-    // $("#09 .description").val(LocalStorage.getItem(Hour, id, description));
-    // $("#10 .description").val(LocalStorage.getItem(Hour, id, description));
-    // $("#11 .description").val(LocalStorage.getItem(Hour, id, description));
-    // $("#12 .description").val(LocalStorage.getItem(Hour, id, description));
-    // $("#13 .description").val(LocalStorage.getItem(Hour, id, description));
-    // $("#14 .description").val(LocalStorage.getItem(Hour, id, description));
-    // $("#15 .description").val(LocalStorage.getItem(Hour, id, description));
-    // $("#16 .description").val(LocalStorage.getItem(Hour, id, description));
-    // $("#17 .description").val(LocalStorage.getItem(Hour, id, description));
-
-//var hourDescription = document.getElementById('description);
-//hourDescription.textContent = Hour.description
+//function that constantly displays what's saved in local storage in each description box 
+function loadMem() {
+    for (var i = 8; i < 18; i++) {
+        var hourRow = $("#" + i);
+        hourRow.children(".description").val(window.localStorage.getItem("" + i));
+    }
+}
+loadMem();
 
 
-
-// function that sets background color in timeBlock
+// function that sets background color in timeBlock (works)
 function rowColor() {
     var hourNow = moment().hour();
-    console.log(hourNow);
 
-    var timeBlock = /*row.id*/
-//     console.log(timeBlock)
-        
-//     if (timeBlock < hourNow) {
-//         /*row textarea*/.addClass("past");
-//         /*row textarea*/.removeClass("present");
-//         /*row textarea*/.removeClass("future");
-//     } else if (timeBlock === hourNow) {
-//         /*row textarea*/.removeClass("past");
-//         /*row textarea*/.addClass("present");
-//         /*row textarea*/.removeClass("future");
-//     } else {
-//         /*row textarea*/.removeClass("past");
-//         /*row textarea*/.removeClass("present");
-//         /*row textarea*/.addClass("future");
-//     }
-// }
+    for (var i = 8; i < 18; i++) {
+        var hourRow = $("#" + i);
+        console.log(hourRow);
 
-// rowColor();
+        if (i < hourNow) {
+            hourRow.children(".description").addClass("past");
+            hourRow.children(".description").removeClass("present");
+            hourRow.children(".description").removeClass("future");
+        } else if (i === hourNow) {
+            hourRow.children(".description").removeClass("past");
+            hourRow.children(".description").addClass("present");
+            hourRow.children(".description").removeClass("future");
+        } else {
+            hourRow.children(".description").removeClass("past");
+            hourRow.children(".description").removeClass("present");
+            hourRow.children(".description").addClass("future");
+        }
+    }
+}
+rowColor();
