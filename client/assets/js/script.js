@@ -13,7 +13,7 @@ $(".saveBtn").on("click", function() {
 });
 
 
-//function that displays what's saved in local storage in each corresponding textarea 
+//function that constantly displays what's saved in local storage in each corresponding textarea 
 function loadMem() {
     for (var i = 8; i < 18; i++) {
         var hourRow = $("#" + i);
